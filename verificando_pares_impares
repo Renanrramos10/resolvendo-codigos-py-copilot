@@ -1,6 +1,10 @@
 # Como entrada, receba um número inteiro e verifique se ele é par ou ímpar. Uma dica é: Utilize condicionais para realizar a verificação.
 
 num1 = float(input("Digite um numero inteiro: "))
+if num1 % 2 == 0:
+    print(f"{int(num1)} é par")
+else:
+    print(f"{int(num1)} é ímpar")
 
 
 
