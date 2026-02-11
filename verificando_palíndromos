@@ -1,1 +1,14 @@
-#Vamos testar se uma palavra é um palíndromo? Uma dica é: Utilize conceitos de manipulação de strings para inverter a palavra e comparar com a original.
+# Vamos testar se uma palavra é paíndromo? Uma dica é: Utilize conceitos de manipulação de strings para inverter a palavra e comparar com a original.
+def eh_palindromo(palavra):
+    # Remove espaços e converte para minúsculas
+    palavra_limpa = palavra.replace(" ", "").lower()
+    # Inverte a palavra e compara com a original
+    return palavra_limpa == palavra_limpa[::-1]
+# Solicita ao usuário que insira uma palavra
+palavra_entrada = input("Digite uma palavra para verificar se é um palíndromo: ")
+
+    # Verifica e exibe o resultado
+if eh_palindromo(palavra_entrada):
+        print(f"'{palavra_entrada}' é um palíndromo!")
+else:
+        print(f"'{palavra_entrada}' não é um palíndromo.")
